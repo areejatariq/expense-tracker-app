@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: CI
+name: expense app
 
 # Controls when the action will run. Triggers the workflow on push or pull request
 # events but only for the master branch
@@ -37,4 +37,4 @@ jobs:
       run: npm install --global surge
     
     - name: depoly surge
-      run: surge ./build expenseappareeja.surge.sh --token ${{secrets.expense_tracker}}
+      run: surge ./build expenseappareeja.surge.sh --token${{secrets.expense_tracker}}
