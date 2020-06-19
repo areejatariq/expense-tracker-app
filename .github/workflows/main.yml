@@ -37,4 +37,4 @@ jobs:
       run: npm install --global surge
     
     - name: depoly surge
-      run: surge ./build expenseappareeja.surge.sh --token ${{secrets.surge_token}}
+      run: surge ./build expenseappareeja.surge.sh --token ${{secrets.expense_tracker}}
